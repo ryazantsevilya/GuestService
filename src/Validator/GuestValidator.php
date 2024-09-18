@@ -53,6 +53,10 @@ class GuestValidator
             throw new ValidatorException('Email не должен быть длиннее 255 символов');
         }
 
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            throw new ValidatorException('Неверный формат email');
+        }
+
         if (
             $guestDTO->getId()
             && $context === self::CONTEXT_EDIT
