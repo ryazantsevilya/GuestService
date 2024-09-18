@@ -1,0 +1,244 @@
+1,Afghanistan,93
+2,Albania,355
+3,Algeria,213
+4,American Samoa,1
+5,Andorra,376
+6,Angola,244
+7,Anguilla,1
+8,Antigua and Barbuda,1
+9,Argentina,54
+10,Armenia,374
+11,Aruba,297
+12,Australia,61
+13,Australian External Territories,672
+14,Austria,43
+15,Azerbaijan,994
+16,Bahamas,1
+17,Bahrain,973
+18,Bangladesh,880
+19,Barbados,1
+20,Belarus,375
+21,Belgium,32
+22,Belize,501
+23,Benin,229
+24,Bermuda,1
+25,Bhutan,975
+26,Bolivia (Plurinational State of),591
+27,"Bonaire, Sint Eustatius and Saba",599
+28,Bosnia and Herzegovina,387
+29,Botswana,267
+30,Brazil,55
+31,British Virgin Islands,1
+32,Brunei Darussalam,673
+33,Bulgaria,359
+34,Burkina Faso,226
+35,Burundi,257
+36,Cambodia,855
+37,Cameroon,237
+38,Canada,1
+39,Cape Verde,238
+40,Cayman Islands,1
+41,Central African Rep.,236
+42,Chad,235
+43,Chile,56
+44,China,86
+45,Colombia,57
+46,Comoros,269
+47,Congo,242
+48,Cook Islands,682
+49,Costa Rica,506
+50,Côte d'Ivoire,225
+51,Croatia,385
+52,Cuba,53
+53,Curaçao,599
+54,Cyprus,357
+55,Czech Rep.,420
+56,Dem. People's Rep. of Korea,850
+57,Dem. Rep. of the Congo,243
+58,Denmark,45
+59,Diego Garcia,246
+60,Djibouti,253
+61,Dominica,1
+62,Dominican Rep.,1
+63,Ecuador,593
+64,Egypt,20
+65,El Salvador,503
+66,Equatorial Guinea,240
+67,Eritrea,291
+68,Estonia,372
+69,Ethiopia,251
+70,Falkland Islands (Malvinas),500
+71,Faroe Islands,298
+72,Fiji,679
+73,Finland,358
+74,France,33
+75,French Dep. and Territories in the Indian Ocean,262
+76,French Guiana,594
+77,French Polynesia,689
+78,Gabon,241
+79,Gambia,220
+80,Georgia,995
+81,Germany,49
+82,Ghana,233
+83,Gibraltar,350
+84,"Global Mobile Satellite System (GMSS), shared",881
+85,Greece,30
+86,Greenland,299
+87,Grenada,1
+88,"Group of countries, shared code",388
+89,Guadeloupe,590
+90,Guam,1
+91,Guatemala,502
+92,Guinea,224
+93,Guinea-Bissau,245
+94,Guyana,592
+95,Haiti,509
+96,Honduras,504
+97,"Hong Kong, China",852
+98,Hungary,36
+99,Iceland,354
+100,India,91
+101,Indonesia,62
+102,Inmarsat SNAC,870
+103,International Freephone Service,800
+104,"International Networks, shared code",882
+105,"International Networks, shared code",883
+106,International Premium Rate Service (IPRS),979
+107,International Shared Cost Service (ISCS),808
+108,Iran (Islamic Republic of),98
+109,Iraq,964
+110,Ireland,353
+111,Israel,972
+112,Italy,39
+113,Jamaica,1
+114,Japan,81
+115,Jordan,962
+116,Kazakhstan,77
+117,Kenya,254
+118,Kiribati,686
+119,Korea (Rep. of),82
+120,Kuwait,965
+121,Kyrgyzstan,996
+122,Lao P.D.R.,856
+123,Latvia,371
+124,Lebanon,961
+125,Lesotho,266
+126,Liberia,231
+127,Libya,218
+128,Liechtenstein,423
+129,Lithuania,370
+130,Luxembourg,352
+131,"Macao, China",853
+132,Madagascar,261
+133,Malawi,265
+134,Malaysia,60
+135,Maldives,960
+136,Mali,223
+137,Malta,356
+138,Marshall Islands,692
+139,Martinique,596
+140,Mauritania,222
+141,Mauritius,230
+142,Mexico,52
+143,Micronesia,691
+144,Moldova (Republic of),373
+145,Monaco,377
+146,Mongolia,976
+147,Montenegro,382
+148,Montserrat,1
+149,Morocco,212
+150,Mozambique,258
+151,Myanmar,95
+152,Namibia,264
+153,Nauru,674
+154,Nepal,977
+155,Netherlands,31
+156,New Caledonia,687
+157,New Zealand,64
+158,Nicaragua,505
+159,Niger,227
+160,Nigeria,234
+161,Niue,683
+162,Northern Marianas,1
+163,Norway,47
+164,Oman,968
+165,Pakistan,92
+166,Palau,680
+167,Panama,507
+168,Papua New Guinea,675
+169,Paraguay,595
+170,Peru,51
+171,Philippines,63
+172,Poland,48
+173,Portugal,351
+174,Puerto Rico,1
+175,Qatar,974
+176,Romania,40
+177,Russian Federation,7
+178,Rwanda,250
+179,"Saint Helena, Ascension and Tristan da Cunha",247
+180,"Saint Helena, Ascension and Tristan da Cunha",290
+181,Saint Kitts and Nevis,1
+182,Saint Lucia,1
+183,Saint Pierre and Miquelon,508
+184,Saint Vincent and the Grenadines,1
+185,Samoa,685
+186,San Marino,378
+187,Sao Tome and Principe,239
+188,Saudi Arabia,966
+189,Senegal,221
+190,Serbia,381
+191,Seychelles,248
+192,Sierra Leone,232
+193,Singapore,65
+194,Sint Maarten (Dutch part),1
+195,Slovakia,421
+196,Slovenia,386
+197,Solomon Islands,677
+198,Somalia,252
+199,South Africa,27
+200,South Sudan,211
+201,Spain,34
+202,Sri Lanka,94
+203,Sudan,249
+204,Suriname,597
+205,Swaziland,268
+206,Sweden,46
+207,Switzerland,41
+208,Syrian Arab Republic,963
+209,"Taiwan, China",886
+210,Tajikistan,992
+211,Tanzania,255
+212,Telecommunications for Disaster Relief (TDR),888
+213,Thailand,66
+214,The Former Yugoslav Republic of Macedonia,389
+215,Timor-Leste,670
+216,Togo,228
+217,Tokelau,690
+218,Tonga,676
+219,Trial of a proposed new international service,991
+220,Trinidad and Tobago,1
+221,Tunisia,216
+222,Turkey,90
+223,Turkmenistan,993
+224,Turks and Caicos Islands,1
+225,Tuvalu,688
+226,Uganda,256
+227,Ukraine,380
+228,United Arab Emirates,971
+229,United Kingdom,44
+230,United States,1
+231,United States Virgin Islands,1
+232,Universal Personal Telecommunication (UPT),878
+233,Uruguay,598
+234,Uzbekistan,998
+235,Vanuatu,678
+236,Vatican,379
+237,Vatican,39
+238,Venezuela (Bolivarian Republic of),58
+239,Viet Nam,84
+240,Wallis and Futuna,681
+241,Yemen,967
+242,Zambia,260
+243,Zimbabwe,263
+244,Reserved,970
