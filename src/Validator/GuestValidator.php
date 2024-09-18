@@ -19,8 +19,7 @@ class GuestValidator
 
     public function validate(GuestDTO $guestDTO, ?string $context = null)
     {
-        if (!$guestDTO->getFirstName())
-        {
+        if (!$guestDTO->getFirstName()) {
             throw new ValidatorException('Имя не указано');
         }
 
@@ -28,8 +27,7 @@ class GuestValidator
             throw new ValidatorException('Фамилия не указана');
         }
 
-        if (strlen($guestDTO->getFirstName()) > 255)
-        {
+        if (strlen($guestDTO->getFirstName()) > 255) {
             throw new ValidatorException('Имя не должно быть длиннее 255 символов');
         }
 
@@ -40,7 +38,7 @@ class GuestValidator
         }
 
         if (
-            $guestDTO->getCountryId() 
+            $guestDTO->getCountryId()
             && !($this->countryRepository->find($guestDTO->getCountryId()))
         ) {
             throw new ValidatorException('Страна не нейдена');
@@ -56,7 +54,7 @@ class GuestValidator
         }
 
         if (
-            $guestDTO->getId() 
+            $guestDTO->getId()
             && $context === self::CONTEXT_EDIT
         ) {
             $findGuest = $this->guestRepository->find($guestDTO->getId());
@@ -82,7 +80,7 @@ class GuestValidator
         }
 
         if (
-            $guestDTO->getId() 
+            $guestDTO->getId()
             && $context === self::CONTEXT_EDIT
         ) {
             $findGuest = $this->guestRepository->find($guestDTO->getId());
@@ -97,7 +95,7 @@ class GuestValidator
         }
 
         if (
-            !ctype_digit($phonenumber) 
+            !ctype_digit($phonenumber)
             || strlen($phonenumber) < 9
         ) {
             throw new ValidatorException('Неверный формат номера телефона');

@@ -13,7 +13,7 @@ class Guest extends AbstractEntity
 {
     #[Column(type: 'string', length: 255)]
     private string $firstName;
-    
+
     #[Column(type: 'string', length: 255)]
     private string $lastName;
 

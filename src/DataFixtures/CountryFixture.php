@@ -14,10 +14,10 @@ class CountryFixture extends Fixture implements FixtureInterface
     {
         foreach ($this->getData() as $data) {
             $country = $this->getCountry($data);
- 
+
             $manager->persist($country);
         }
- 
+
         $manager->flush();
     }
 

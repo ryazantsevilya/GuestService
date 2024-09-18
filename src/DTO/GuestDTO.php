@@ -2,14 +2,14 @@
 
 namespace App\DTO;
 
-class GuestDTO 
+class GuestDTO
 {
     private ?int $id = null;
     private ?string $firstName = null;
-    private ?string $lastName= null;
-    private ?string $phonenumber= null;
-    private ?string $email= null;
-    private ?int $countryId= null;
+    private ?string $lastName = null;
+    private ?string $phonenumber = null;
+    private ?string $email = null;
+    private ?int $countryId = null;
 
     public function getFirstName(): ?string
     {

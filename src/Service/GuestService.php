@@ -11,7 +11,7 @@ use Doctrine\ORM\EntityManagerInterface;
 class GuestService
 {
     public function __construct(
-        private EntityManagerInterface $em, 
+        private EntityManagerInterface $em,
         private CountryRepository $countryRepository,
         private GuestRepository $guestRepository
     ) {
@@ -25,7 +25,7 @@ class GuestService
         $guest->setPhonenumber($dto->getPhonenumber());
         $guest->setEmail($dto->getEmail());
 
-        $country = $dto->getCountryId() === null ? 
+        $country = $dto->getCountryId() === null ?
                 $this->countryRepository->getCountryByPhonenumber($dto->getPhonenumber()) :
                 $this->countryRepository->find($dto->getCountryId());
 
@@ -51,7 +51,7 @@ class GuestService
         return true;
     }
 
-    public function editGuest (int $id, GuestDTO $dto): Guest
+    public function editGuest(int $id, GuestDTO $dto): Guest
     {
         $guest = $this->guestRepository->find($id);
 
@@ -60,7 +60,7 @@ class GuestService
         $guest->setPhonenumber($dto->getPhonenumber());
         $guest->setEmail($dto->getEmail());
 
-        $country = $dto->getCountryId() === null ? 
+        $country = $dto->getCountryId() === null ?
             $this->countryRepository->getCountryByPhonenumber($dto->getPhonenumber()) :
             $this->countryRepository->find($dto->getCountryId());
 

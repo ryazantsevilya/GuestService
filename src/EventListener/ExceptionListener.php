@@ -15,9 +15,9 @@ class ExceptionListener
     public function __invoke(ExceptionEvent $event): void
     {
         $exception = $event->getThrowable();
-        
+
         if (
-            $exception instanceof ValidatorException 
+            $exception instanceof ValidatorException
             || $exception instanceof BadRequestHttpException
         ) {
             $message = json_encode([
@@ -29,7 +29,7 @@ class ExceptionListener
             $response->setContent($message);
             $response->setStatusCode(Response::HTTP_BAD_REQUEST);
             $response->headers->set('Content-Type', 'application/json');
-            
+
             // sends the modified response object to the event
             $event->setResponse($response);
         }
@@ -44,13 +44,13 @@ class ExceptionListener
             $response->setContent($message);
             $response->setStatusCode(Response::HTTP_BAD_REQUEST);
             $response->headers->set('Content-Type', 'application/json');
-            
+
             // sends the modified response object to the event
             $event->setResponse($response);
         }
 
         if (
-            $exception instanceof NotFoundHttpException 
+            $exception instanceof NotFoundHttpException
             || $exception instanceof MethodNotAllowedHttpException
         ) {
             $response = new Response();

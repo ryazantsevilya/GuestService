@@ -26,7 +26,7 @@ class GuestController extends AbstractController
     public function get(int $id): JsonResponse
     {
         $guest = $this->guestRepository->find($id);
-        
+
         if (!$guest) {
             throw new NotFoundHttpException();
         }
@@ -51,7 +51,7 @@ class GuestController extends AbstractController
         if (!$guest) {
             throw new NotFoundHttpException();
         }
-        
+
         $dto->setId($id);
 
         $this->validator->validate($dto, GuestValidator::CONTEXT_EDIT);

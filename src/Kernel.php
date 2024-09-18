@@ -18,11 +18,11 @@ class Kernel extends BaseKernel
         $response = parent::handle($request, $type, $catch);
 
         $executionTime = round((microtime(true) - $start) * 1000);
-        $peakMemoryUsage = round(memory_get_peak_usage()/1024);
+        $peakMemoryUsage = round(memory_get_peak_usage() / 1024);
 
         $response->headers->set('X-Debug-Time', $executionTime.' ms');
         $response->headers->set('X-Debug-Memory', $peakMemoryUsage . ' KB');
-        
+
         return $response;
     }
 }
