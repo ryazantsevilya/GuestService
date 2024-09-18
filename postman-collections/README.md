@@ -2,6 +2,11 @@
 
 Файл [crud_guest_collection.json](https://github.com/ryazantsevilya/GuestService/blob/main/postman-collections/crud_guest_collection.json) содержит коллекцию запросов для Postman. Variable {{hostname}} по умолчанию "guestservice.localhost".
 
+## Default headers
+X-Debug-Memory - (KB) Пиковое значение потребления памяти на запрос.
+
+X-Debug-Time - (ms) Время потраченое на запрос, отсчет идет после инициализации Kernel.
+
 ## GET /api/guest/{id}
 Получение даннх о госте по id.
 {id} - int, required
