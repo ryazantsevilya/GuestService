@@ -3,9 +3,7 @@
 namespace App\Controller;
 
 use App\DTO\GuestDTO;
-use App\Repository\GuestRepository;
 use App\Service\GuestService;
-use App\Validator\GuestValidator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpKernel\Attribute\MapRequestPayload;
@@ -16,16 +14,14 @@ use Symfony\Component\Routing\Attribute\Route;
 class GuestController extends AbstractController
 {
     public function __construct(
-        private GuestValidator $validator,
-        private GuestService $guestService,
-        private GuestRepository $guestRepository
+        private GuestService $guestService
     ) {
     }
 
     #[Route('/{id}', methods: ['GET'])]
     public function get(int $id): JsonResponse
     {
-        $guest = $this->guestRepository->find($id);
+        $guest = $this->guestService->getGuest($id);
 
         if (!$guest) {
             throw new NotFoundHttpException();
@@ -37,7 +33,6 @@ class GuestController extends AbstractController
     #[Route(methods: ['POST'])]
     public function create(#[MapRequestPayload()] GuestDTO $dto): JsonResponse
     {
-        $this->validator->validate($dto);
         $guest = $this->guestService->createGuest($dto);
 
         return $this->json($guest);
@@ -46,7 +41,7 @@ class GuestController extends AbstractController
     #[Route('/{id}', methods: ['PUT'])]
     public function edit(int $id, #[MapRequestPayload()] GuestDTO $dto): JsonResponse
     {
-        $guest = $this->guestRepository->find($id);
+        $guest = $this->guestService->getGuest($id);
 
         if (!$guest) {
             throw new NotFoundHttpException();
@@ -54,7 +49,6 @@ class GuestController extends AbstractController
 
         $dto->setId($id);
 
-        $this->validator->validate($dto, GuestValidator::CONTEXT_EDIT);
         $guest = $this->guestService->editGuest($id, $dto);
 
         return $this->json($guest);

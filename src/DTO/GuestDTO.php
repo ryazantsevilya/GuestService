@@ -52,6 +52,10 @@ class GuestDTO
 
     public function setPhonenumber(string $phonenumber): self
     {
+        if ($phonenumber[0] === '+') {
+            unset($phonenumber[0]);
+        }
+        
         $this->phonenumber = $phonenumber;
 
         return $this;

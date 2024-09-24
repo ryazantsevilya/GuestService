@@ -99,13 +99,12 @@ class GuestValidator
         }
 
         if (
-            strlen($phonenumber) < 9 
-            || strlen($phonenumber) > 13
+            strlen($phonenumber) < 3 
+            || strlen($phonenumber) > 15
         ) {
             throw new ValidatorException('Неверный формат номера телефона');
         }
 
-        // Формат телефона без +
         if (!ctype_digit($phonenumber)) {
             throw new ValidatorException('Неверный формат номера телефона');
         }
